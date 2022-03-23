@@ -146,3 +146,9 @@ C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\obj\Debug\net5.0\
 C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\obj\Debug\net5.0\TestProject1.pdb
 C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\obj\Debug\net5.0\TestProject1.genruntimeconfig.cache
 C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\obj\Debug\net5.0\ref\TestProject1.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\bin\Debug\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\TestProject1\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll

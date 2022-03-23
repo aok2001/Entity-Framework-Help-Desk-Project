@@ -13,3 +13,7 @@ C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\obj\Debug
 C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\obj\Debug\net5.0\HelpDeskClassLibrary.pdb
 C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\obj\Debug\net5.0\HelpDeskClassLibrary.genruntimeconfig.cache
 C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\obj\Debug\net5.0\ref\HelpDeskClassLibrary.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\andrew\source\repos\HelpDeskClassLibrary\HelpDeskClassLibrary\bin\Debug\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
