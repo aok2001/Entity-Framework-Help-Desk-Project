@@ -40,5 +40,56 @@ namespace TestProject1
             //Always have to save changes
             db.SaveChanges();
         }
+
+        [Test]
+        public void CreateNewAdmin()
+        {
+            Admin x = new Admin()
+            {
+                AccountType = 1,
+                DateJoined = DateTime.Now,
+                Password = "password",
+                Username = "TestAdmin",
+                Profile = new UserProfile()
+                {
+                    FirstName = "Test",
+                    LastName = "Admin",
+                    Occupation = "Administrator",
+                    Birthday = DateTime.Now
+                }
+            };
+
+            HelpDeskDBContext db = new HelpDeskDBContext();
+            db.Add(x);
+            //Always have to save changes
+            db.SaveChanges();
+        }
+
+        [Test]
+        public void GetUserList()
+        {
+            List<User> users = new List<User>();
+
+            HelpDeskDBContext db = new HelpDeskDBContext();
+            
+            users = db.Users.ToList();
+
+
+            Assert.AreEqual(users, db.Users);
+        }
+
+        [Test]
+        public void GetAdminList()
+        {
+            List<Admin> admins = new List<Admin>();
+
+            HelpDeskDBContext db = new HelpDeskDBContext();
+
+            admins = db.Admins.ToList();
+
+            Assert.AreEqual(admins, db.Admins);
+        }
+
+        
     }
 }
