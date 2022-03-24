@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace HelpDeskClassLibrary
 {
@@ -96,14 +98,20 @@ namespace HelpDeskClassLibrary
         {          
             /** This returns null for some reason**/
 
+            User user_with_profile = new User();
             UserProfile ret = new UserProfile();
+            
 
             using (HelpDeskDBContext db = new HelpDeskDBContext())
             {
-                ret = db.Profiles.Where(x => x == user.Profile).FirstOrDefault();
+
+                //ret = db.Profiles.Where(x => x == user.Profile).FirstOrDefault();
+                user_with_profile = db.Users.Include(x => x.Profile).Where(x => x.Username == user.Username).FirstOrDefault();
+                //ret = user_w
+                
             }
 
-            return ret;
+            return user_with_profile.Profile;
         }
 
         #endregion
