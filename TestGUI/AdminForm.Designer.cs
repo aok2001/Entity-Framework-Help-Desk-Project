@@ -124,6 +124,7 @@
             this.btnProfile.TabIndex = 8;
             this.btnProfile.Text = "View Profile";
             this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // listBox4
             // 

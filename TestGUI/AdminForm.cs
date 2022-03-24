@@ -120,5 +120,15 @@ namespace TestGUI
             InboxForm inboxForm = new InboxForm();
             inboxForm.ShowDialog();
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            User user = (User)lstUsers.SelectedItem;
+
+            ProfileForm profileForm = new ProfileForm(user);
+            this.Hide();
+            profileForm.ShowDialog();
+            this.Show();
+        }
     }
 }

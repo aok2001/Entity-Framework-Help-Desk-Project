@@ -96,18 +96,12 @@ namespace HelpDeskClassLibrary
 
         public static UserProfile GetProfile(User user)
         {          
-            /** This returns null for some reason**/
-
-            User user_with_profile = new User();
-            UserProfile ret = new UserProfile();
-            
+            User user_with_profile = new User();            
 
             using (HelpDeskDBContext db = new HelpDeskDBContext())
             {
 
-                //ret = db.Profiles.Where(x => x == user.Profile).FirstOrDefault();
                 user_with_profile = db.Users.Include(x => x.Profile).Where(x => x.Username == user.Username).FirstOrDefault();
-                //ret = user_w
                 
             }
 
