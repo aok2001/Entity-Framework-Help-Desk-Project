@@ -30,7 +30,7 @@
         {
             this.btnTicket = new System.Windows.Forms.Button();
             this.lstAdmins = new System.Windows.Forms.ListBox();
-            this.btnSendMessage = new System.Windows.Forms.Button();
+            this.btnViewProfile = new System.Windows.Forms.Button();
             this.btnInbox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -53,15 +53,15 @@
             this.lstAdmins.Size = new System.Drawing.Size(120, 94);
             this.lstAdmins.TabIndex = 2;
             // 
-            // btnSendMessage
+            // btnViewProfile
             // 
-            this.btnSendMessage.Location = new System.Drawing.Point(136, 12);
-            this.btnSendMessage.Name = "btnSendMessage";
-            this.btnSendMessage.Size = new System.Drawing.Size(118, 23);
-            this.btnSendMessage.TabIndex = 3;
-            this.btnSendMessage.Text = "Send Message";
-            this.btnSendMessage.UseVisualStyleBackColor = true;
-            this.btnSendMessage.Click += new System.EventHandler(this.btnSendMessage_Click);
+            this.btnViewProfile.Location = new System.Drawing.Point(136, 12);
+            this.btnViewProfile.Name = "btnViewProfile";
+            this.btnViewProfile.Size = new System.Drawing.Size(118, 23);
+            this.btnViewProfile.TabIndex = 3;
+            this.btnViewProfile.Text = "View Profile";
+            this.btnViewProfile.UseVisualStyleBackColor = true;
+            this.btnViewProfile.Click += new System.EventHandler(this.btnSendMessage_Click);
             // 
             // btnInbox
             // 
@@ -79,7 +79,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnInbox);
-            this.Controls.Add(this.btnSendMessage);
+            this.Controls.Add(this.btnViewProfile);
             this.Controls.Add(this.lstAdmins);
             this.Controls.Add(this.btnTicket);
             this.Name = "StandardForm";
@@ -93,7 +93,7 @@
 
         private System.Windows.Forms.Button btnTicket;
         private System.Windows.Forms.ListBox lstAdmins;
-        private System.Windows.Forms.Button btnSendMessage;
+        private System.Windows.Forms.Button btnViewProfile;
         private System.Windows.Forms.Button btnInbox;
     }
 }

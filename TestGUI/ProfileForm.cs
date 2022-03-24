@@ -25,7 +25,7 @@ namespace TestGUI
 
         private void FillControls()
         {
-            UserProfile userProfile = user.Profile;
+            UserProfile userProfile = BusinessLayer.GetProfile(user);
 
             lblName.Text = $"{userProfile.FirstName} {userProfile.LastName}";
             lblOccupation.Text = $"{userProfile.Occupation}";

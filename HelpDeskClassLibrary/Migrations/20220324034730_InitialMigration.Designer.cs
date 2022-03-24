@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HelpDeskClassLibrary.Migrations
 {
     [DbContext(typeof(HelpDeskDBContext))]
-    [Migration("20220323143035_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220324034730_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

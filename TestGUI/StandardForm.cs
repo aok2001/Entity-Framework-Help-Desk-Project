@@ -50,10 +50,12 @@ namespace TestGUI
 
         private void btnSendMessage_Click(object sender, EventArgs e)
         {
-            //Admin receiver = (Admin)lstAdmins.SelectedItem;
+            User user = (User)lstAdmins.SelectedItem;
 
-            //MessageForm messageForm = new MessageForm(receiver);
-            //messageForm.ShowDialog();
+            ProfileForm profileForm = new ProfileForm(user);
+            this.Hide();
+            profileForm.ShowDialog();
+            this.Show();
         }
 
         private void btnInbox_Click(object sender, EventArgs e)

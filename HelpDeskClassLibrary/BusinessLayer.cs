@@ -92,6 +92,20 @@ namespace HelpDeskClassLibrary
             return ret;
         }
 
+        public static UserProfile GetProfile(User user)
+        {          
+            /** This returns null for some reason**/
+
+            UserProfile ret = new UserProfile();
+
+            using (HelpDeskDBContext db = new HelpDeskDBContext())
+            {
+                ret = db.Profiles.Where(x => x == user.Profile).FirstOrDefault();
+            }
+
+            return ret;
+        }
+
         #endregion
 
         #region "Lists"

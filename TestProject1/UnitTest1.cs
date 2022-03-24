@@ -32,7 +32,6 @@ namespace TestProject1
                     LastName = "User",
                     Occupation = "Salesman",
                     Birthday = DateTime.Now
-
                 }
             };
 
