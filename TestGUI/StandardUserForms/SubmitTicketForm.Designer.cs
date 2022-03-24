@@ -89,6 +89,7 @@
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.btnSubmit);
             this.Name = "SubmitTicketForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SubmitTicketForm";
             this.ResumeLayout(false);
             this.PerformLayout();

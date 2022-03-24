@@ -63,5 +63,11 @@ namespace TestGUI
             InboxForm inboxForm = new InboxForm();
             inboxForm.ShowDialog();
         }
+
+        private void btnTicketHistory_Click(object sender, EventArgs e)
+        {
+            HistoryForm historyForm = new HistoryForm();
+            historyForm.ShowDialog();
+        }
     }
 }

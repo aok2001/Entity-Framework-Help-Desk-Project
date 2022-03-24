@@ -84,6 +84,7 @@
             this.Controls.Add(this.lblOccupation);
             this.Controls.Add(this.lblName);
             this.Name = "ProfileForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProfileForm";
             this.ResumeLayout(false);
             this.PerformLayout();

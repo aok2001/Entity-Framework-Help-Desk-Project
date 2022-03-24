@@ -86,13 +86,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 283);
+            this.ClientSize = new System.Drawing.Size(373, 251);
             this.Controls.Add(this.btnReply);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstMessages);
             this.Controls.Add(this.lstUsers);
             this.Name = "InboxForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InboxForm";
             this.ResumeLayout(false);
             this.PerformLayout();

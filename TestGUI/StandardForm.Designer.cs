@@ -32,11 +32,14 @@
             this.lstAdmins = new System.Windows.Forms.ListBox();
             this.btnViewProfile = new System.Windows.Forms.Button();
             this.btnInbox = new System.Windows.Forms.Button();
+            this.gbAdmins = new System.Windows.Forms.GroupBox();
+            this.btnTicketHistory = new System.Windows.Forms.Button();
+            this.gbAdmins.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTicket
             // 
-            this.btnTicket.Location = new System.Drawing.Point(12, 12);
+            this.btnTicket.Location = new System.Drawing.Point(148, 227);
             this.btnTicket.Name = "btnTicket";
             this.btnTicket.Size = new System.Drawing.Size(118, 23);
             this.btnTicket.TabIndex = 1;
@@ -48,14 +51,14 @@
             // 
             this.lstAdmins.FormattingEnabled = true;
             this.lstAdmins.ItemHeight = 15;
-            this.lstAdmins.Location = new System.Drawing.Point(136, 41);
+            this.lstAdmins.Location = new System.Drawing.Point(6, 22);
             this.lstAdmins.Name = "lstAdmins";
-            this.lstAdmins.Size = new System.Drawing.Size(120, 94);
+            this.lstAdmins.Size = new System.Drawing.Size(118, 184);
             this.lstAdmins.TabIndex = 2;
             // 
             // btnViewProfile
             // 
-            this.btnViewProfile.Location = new System.Drawing.Point(136, 12);
+            this.btnViewProfile.Location = new System.Drawing.Point(6, 215);
             this.btnViewProfile.Name = "btnViewProfile";
             this.btnViewProfile.Size = new System.Drawing.Size(118, 23);
             this.btnViewProfile.TabIndex = 3;
@@ -65,7 +68,7 @@
             // 
             // btnInbox
             // 
-            this.btnInbox.Location = new System.Drawing.Point(12, 41);
+            this.btnInbox.Location = new System.Drawing.Point(148, 34);
             this.btnInbox.Name = "btnInbox";
             this.btnInbox.Size = new System.Drawing.Size(118, 23);
             this.btnInbox.TabIndex = 4;
@@ -73,18 +76,41 @@
             this.btnInbox.UseVisualStyleBackColor = true;
             this.btnInbox.Click += new System.EventHandler(this.btnInbox_Click);
             // 
+            // gbAdmins
+            // 
+            this.gbAdmins.Controls.Add(this.lstAdmins);
+            this.gbAdmins.Controls.Add(this.btnViewProfile);
+            this.gbAdmins.Location = new System.Drawing.Point(12, 12);
+            this.gbAdmins.Name = "gbAdmins";
+            this.gbAdmins.Size = new System.Drawing.Size(130, 249);
+            this.gbAdmins.TabIndex = 5;
+            this.gbAdmins.TabStop = false;
+            this.gbAdmins.Text = "Admins";
+            // 
+            // btnTicketHistory
+            // 
+            this.btnTicketHistory.Location = new System.Drawing.Point(148, 63);
+            this.btnTicketHistory.Name = "btnTicketHistory";
+            this.btnTicketHistory.Size = new System.Drawing.Size(118, 23);
+            this.btnTicketHistory.TabIndex = 6;
+            this.btnTicketHistory.Text = "View Ticket History";
+            this.btnTicketHistory.UseVisualStyleBackColor = true;
+            this.btnTicketHistory.Click += new System.EventHandler(this.btnTicketHistory_Click);
+            // 
             // StandardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(276, 265);
+            this.Controls.Add(this.btnTicketHistory);
+            this.Controls.Add(this.gbAdmins);
             this.Controls.Add(this.btnInbox);
-            this.Controls.Add(this.btnViewProfile);
-            this.Controls.Add(this.lstAdmins);
             this.Controls.Add(this.btnTicket);
             this.Name = "StandardForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StandardForm";
             this.Load += new System.EventHandler(this.StandardForm_Load);
+            this.gbAdmins.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -95,5 +121,7 @@
         private System.Windows.Forms.ListBox lstAdmins;
         private System.Windows.Forms.Button btnViewProfile;
         private System.Windows.Forms.Button btnInbox;
+        private System.Windows.Forms.GroupBox gbAdmins;
+        private System.Windows.Forms.Button btnTicketHistory;
     }
 }

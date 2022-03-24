@@ -16,6 +16,7 @@ namespace TestGUI
         public Form1()
         {
             InitializeComponent();
+            this.Height = 210;
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -109,6 +110,23 @@ namespace TestGUI
             {
                 MessageBox.Show("Login failed.");
             }
+        }
+
+        private bool register_load = false;
+
+        private void btnNewAccount_Click(object sender, EventArgs e)
+        {
+            if (register_load == false)
+            {
+                this.Height = 480;
+                register_load = true;
+            }
+            else if (register_load == true)
+            {
+                this.Height = 210;
+                register_load = false;
+            }
+            
         }
     }
 }

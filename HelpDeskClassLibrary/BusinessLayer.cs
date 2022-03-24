@@ -190,7 +190,17 @@ namespace HelpDeskClassLibrary
                 //received = db.Messages.Where(x => x.ReceiverUsername == sender.Username && x.SenderUsername == receiver.Username).AsEnumerable().ToList();
             }
 
+            return ret;
+        }
 
+        public static List<Ticket> GetUserTickets(User user)
+        {
+            List<Ticket> ret = new List<Ticket>();
+
+            using (HelpDeskDBContext db = new HelpDeskDBContext())
+            {
+                ret = db.Tickets.Where(x => x.TicketSenderUsername == user.Username).ToList();
+            }
 
             return ret;
         }

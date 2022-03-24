@@ -68,6 +68,7 @@
             this.Controls.Add(this.lblReceiver);
             this.Controls.Add(this.btnSend);
             this.Name = "MessageForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageForm";
             this.ResumeLayout(false);
             this.PerformLayout();

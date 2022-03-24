@@ -27,27 +27,27 @@ namespace TestGUI
         {
             List<Ticket> tickets = BusinessLayer.GetTicketList();
 
-            listBox1.DataSource = tickets;
-            listBox1.DisplayMember = "Description";
-            listBox1.ValueMember = "Id";
+            lstPending.DataSource = tickets;
+            lstPending.DisplayMember = "Description";
+            lstPending.ValueMember = "Id";
         }
 
         private void FillAcceptedTickets()
         {
             List<Ticket> tickets = BusinessLayer.GetActiveTicketsList(BusinessLayer.LoggedInUser);
 
-            listBox2.DataSource = tickets;
-            listBox2.DisplayMember = "Description";
-            listBox2.ValueMember = "Id";
+            lstActive.DataSource = tickets;
+            lstActive.DisplayMember = "Description";
+            lstActive.ValueMember = "Id";
         }
 
         private void FillClosedTickets()
         {
             List<Ticket> tickets = BusinessLayer.GetClosedTicketsList(BusinessLayer.LoggedInUser);
 
-            listBox3.DataSource = tickets;
-            listBox3.DisplayMember = "Description";
-            listBox3.ValueMember = "Id";
+            lstClosed.DataSource = tickets;
+            lstClosed.DisplayMember = "Description";
+            lstClosed.ValueMember = "Id";
         }
 
         private void FillUsers()
@@ -63,7 +63,7 @@ namespace TestGUI
 
         private void btnAcceptTicket_Click(object sender, EventArgs e)
         {
-            Ticket ticket = (Ticket)listBox1.SelectedItem;
+            Ticket ticket = (Ticket)lstPending.SelectedItem;
 
             bool success = BusinessLayer.AcceptTicket(ticket, BusinessLayer.LoggedInUser);
 
@@ -80,7 +80,7 @@ namespace TestGUI
 
         private void btnReopen_Click(object sender, EventArgs e)
         {
-            Ticket ticket = (Ticket)listBox3.SelectedItem;
+            Ticket ticket = (Ticket)lstClosed.SelectedItem;
 
             bool success = BusinessLayer.ReopenTicket(ticket, BusinessLayer.LoggedInUser);
 
@@ -97,7 +97,7 @@ namespace TestGUI
 
         private void btnCloseTicket_Click(object sender, EventArgs e)
         {
-            Ticket ticket = (Ticket)listBox2.SelectedItem;
+            Ticket ticket = (Ticket)lstActive.SelectedItem;
 
             bool success = BusinessLayer.CloseTicket(ticket, BusinessLayer.LoggedInUser);
 
