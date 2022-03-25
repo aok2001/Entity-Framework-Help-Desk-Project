@@ -32,13 +32,13 @@ namespace TestGUI
             txtCategory.Text = ticket_with_info.Category;
             txtDesc.Text = ticket_with_info.Description;
 
-            lblOS.Text = systemInfo.OS;
-            lblMachineName.Text = systemInfo.MachineName;
-            lblCoreCount.Text = systemInfo.CoreCount;
-            lblLogicalDrives.Text = systemInfo.LogicalDrives;
-            lblDotNetVersion.Text = systemInfo.DotNetVersion;
-            lblDomainName.Text = systemInfo.DomainName;
-            lblUserName.Text = systemInfo.UserName;
+            lblOS.Text = $"OS: {systemInfo.OS}";
+            lblMachineName.Text = $"PC Name: {systemInfo.MachineName}";
+            lblCoreCount.Text = $"Core Count: {systemInfo.CoreCount}";
+            lblLogicalDrives.Text = $"Drives: {systemInfo.LogicalDrives}";
+            lblDotNetVersion.Text = $".Net: {systemInfo.DotNetVersion}";
+            lblDomainName.Text = $"Domain: {systemInfo.DomainName}";
+            lblUserName.Text = $"Username: {systemInfo.UserName}";
 
         }
 

@@ -32,6 +32,8 @@ namespace TestGUI.StandardUserForms
             //    $"Windows Username: {Environment.UserName}"
             //};
 
+
+
             Ticket ticket = new Ticket()
             {
                 Category = cbCategory.Text,
@@ -43,7 +45,7 @@ namespace TestGUI.StandardUserForms
                     OS = Environment.OSVersion.ToString(),
                     MachineName = Environment.MachineName.ToString(),
                     CoreCount = Environment.ProcessorCount.ToString(),
-                    LogicalDrives = Environment.GetLogicalDrives().ToString(),
+                    LogicalDrives = Environment.GetLogicalDrives().Length.ToString(),
                     DotNetVersion = Environment.Version.ToString(),
                     DomainName = Environment.UserDomainName.ToString(),
                     UserName = Environment.UserName.ToString()

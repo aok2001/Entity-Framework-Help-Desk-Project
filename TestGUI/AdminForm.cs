@@ -70,12 +70,16 @@ namespace TestGUI
             if (success)
             {
                 MessageBox.Show("Ticket accepted");
-                this.Refresh();
+                
             }
             else
             {
                 MessageBox.Show("Error accepting ticket");
             }
+            
+            FillAcceptedTickets();
+            FillPendingTickets();
+            FillClosedTickets();
         }
 
         private void btnReopen_Click(object sender, EventArgs e)
@@ -93,6 +97,10 @@ namespace TestGUI
             {
                 MessageBox.Show("Error activating ticket");
             }
+
+            FillAcceptedTickets();
+            FillPendingTickets();
+            FillClosedTickets();
         }
 
         private void btnCloseTicket_Click(object sender, EventArgs e)
@@ -110,6 +118,10 @@ namespace TestGUI
             {
                 MessageBox.Show("Error closing ticket");
             }
+
+            FillAcceptedTickets();
+            FillPendingTickets();
+            FillClosedTickets();
         }
 
         #endregion

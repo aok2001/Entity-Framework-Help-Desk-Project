@@ -71,6 +71,7 @@
             // 
             this.txtLP.Location = new System.Drawing.Point(93, 87);
             this.txtLP.Name = "txtLP";
+            this.txtLP.PasswordChar = '*';
             this.txtLP.Size = new System.Drawing.Size(275, 29);
             this.txtLP.TabIndex = 34;
             // 

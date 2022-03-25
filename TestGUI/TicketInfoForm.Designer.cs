@@ -61,7 +61,7 @@
             this.lblUser.AutoSize = true;
             this.lblUser.BackColor = System.Drawing.Color.Honeydew;
             this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUser.Location = new System.Drawing.Point(448, 34);
+            this.lblUser.Location = new System.Drawing.Point(464, 9);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(42, 21);
             this.lblUser.TabIndex = 4;
@@ -82,7 +82,7 @@
             this.lblOS.AutoSize = true;
             this.lblOS.BackColor = System.Drawing.Color.Azure;
             this.lblOS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblOS.Location = new System.Drawing.Point(26, 118);
+            this.lblOS.Location = new System.Drawing.Point(26, 74);
             this.lblOS.Name = "lblOS";
             this.lblOS.Size = new System.Drawing.Size(31, 21);
             this.lblOS.TabIndex = 9;
@@ -93,7 +93,7 @@
             this.lblMachineName.AutoSize = true;
             this.lblMachineName.BackColor = System.Drawing.Color.MistyRose;
             this.lblMachineName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMachineName.Location = new System.Drawing.Point(110, 118);
+            this.lblMachineName.Location = new System.Drawing.Point(26, 118);
             this.lblMachineName.Name = "lblMachineName";
             this.lblMachineName.Size = new System.Drawing.Size(111, 21);
             this.lblMachineName.TabIndex = 10;
@@ -104,7 +104,7 @@
             this.lblCoreCount.AutoSize = true;
             this.lblCoreCount.BackColor = System.Drawing.Color.LightYellow;
             this.lblCoreCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCoreCount.Location = new System.Drawing.Point(274, 118);
+            this.lblCoreCount.Location = new System.Drawing.Point(392, 74);
             this.lblCoreCount.Name = "lblCoreCount";
             this.lblCoreCount.Size = new System.Drawing.Size(85, 21);
             this.lblCoreCount.TabIndex = 11;
@@ -115,7 +115,7 @@
             this.lblLogicalDrives.AutoSize = true;
             this.lblLogicalDrives.BackColor = System.Drawing.Color.LavenderBlush;
             this.lblLogicalDrives.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLogicalDrives.Location = new System.Drawing.Point(412, 118);
+            this.lblLogicalDrives.Location = new System.Drawing.Point(392, 118);
             this.lblLogicalDrives.Name = "lblLogicalDrives";
             this.lblLogicalDrives.Size = new System.Drawing.Size(103, 21);
             this.lblLogicalDrives.TabIndex = 12;
@@ -126,7 +126,7 @@
             this.lblDotNetVersion.AutoSize = true;
             this.lblDotNetVersion.BackColor = System.Drawing.Color.GhostWhite;
             this.lblDotNetVersion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDotNetVersion.Location = new System.Drawing.Point(568, 118);
+            this.lblDotNetVersion.Location = new System.Drawing.Point(598, 74);
             this.lblDotNetVersion.Name = "lblDotNetVersion";
             this.lblDotNetVersion.Size = new System.Drawing.Size(112, 21);
             this.lblDotNetVersion.TabIndex = 13;
@@ -137,7 +137,7 @@
             this.lblDomainName.AutoSize = true;
             this.lblDomainName.BackColor = System.Drawing.Color.AliceBlue;
             this.lblDomainName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDomainName.Location = new System.Drawing.Point(870, 118);
+            this.lblDomainName.Location = new System.Drawing.Point(806, 74);
             this.lblDomainName.Name = "lblDomainName";
             this.lblDomainName.Size = new System.Drawing.Size(107, 21);
             this.lblDomainName.TabIndex = 14;
@@ -148,7 +148,7 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.BackColor = System.Drawing.Color.Cornsilk;
             this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserName.Location = new System.Drawing.Point(733, 118);
+            this.lblUserName.Location = new System.Drawing.Point(598, 118);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(84, 21);
             this.lblUserName.TabIndex = 15;
@@ -176,7 +176,7 @@
             this.groupBox1.Controls.Add(this.lblDotNetVersion);
             this.groupBox1.Controls.Add(this.lblCoreCount);
             this.groupBox1.Controls.Add(this.lblLogicalDrives);
-            this.groupBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(28, 109);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1036, 458);
