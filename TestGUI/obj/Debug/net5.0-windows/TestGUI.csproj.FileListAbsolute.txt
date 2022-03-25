@@ -138,3 +138,4 @@ C:\Users\cm_an\Source\Repos\Entity-Framework-Help-Desk-Project\TestGUI\obj\Debug
 C:\Users\cm_an\Source\Repos\Entity-Framework-Help-Desk-Project\TestGUI\obj\Debug\net5.0-windows\ref\TestGUI.dll
 C:\Users\cm_an\Source\Repos\Entity-Framework-Help-Desk-Project\TestGUI\obj\Debug\net5.0-windows\TestGUI.pdb
 C:\Users\cm_an\Source\Repos\Entity-Framework-Help-Desk-Project\TestGUI\obj\Debug\net5.0-windows\TestGUI.genruntimeconfig.cache
+C:\Users\cm_an\Source\Repos\Entity-Framework-Help-Desk-Project\TestGUI\obj\Debug\net5.0-windows\TestGUI.Properties.Resources.resources
