@@ -21,39 +21,34 @@ namespace TestGUI.StandardUserForms
 
         private void btnTicket_Click(object sender, EventArgs e)
         {
-            //List<string> SystemInfo = new List<string>()
-            //{
-            //    $"Operating System: {Environment.OSVersion}",
-            //    $"PC Name: {Environment.MachineName}",
-            //    $"CPU Count: {Environment.ProcessorCount}",
-            //    $"Logical Drives: {Environment.GetLogicalDrives()}",
-            //    $".NET Version: {Environment.Version}",
-            //    $"Domain: {Environment.UserDomainName}",
-            //    $"Windows Username: {Environment.UserName}"
-            //};
-
-
-
-            Ticket ticket = new Ticket()
+            if (txtDesc.Text != "" || cbCategory.SelectedIndex != null)
             {
-                Category = cbCategory.Text,
-                Description = txtDesc.Text,
-                Status = "Pending",
-                TicketSenderUsername = BusinessLayer.LoggedInUser.Username,
-                SystemInfo = new SystemInfo()
+                Ticket ticket = new Ticket()
                 {
-                    OS = Environment.OSVersion.ToString(),
-                    MachineName = Environment.MachineName.ToString(),
-                    CoreCount = Environment.ProcessorCount.ToString(),
-                    LogicalDrives = Environment.GetLogicalDrives().Length.ToString(),
-                    DotNetVersion = Environment.Version.ToString(),
-                    DomainName = Environment.UserDomainName.ToString(),
-                    UserName = Environment.UserName.ToString()
-                }
-            };
+                    Category = cbCategory.Text,
+                    Description = txtDesc.Text,
+                    Status = "Pending",
+                    TicketSenderUsername = BusinessLayer.LoggedInUser.Username,
+                    SystemInfo = new SystemInfo()
+                    {
+                        OS = Environment.OSVersion.ToString(),
+                        MachineName = Environment.MachineName.ToString(),
+                        CoreCount = Environment.ProcessorCount.ToString(),
+                        LogicalDrives = Environment.GetLogicalDrives().Length.ToString(),
+                        DotNetVersion = Environment.Version.ToString(),
+                        DomainName = Environment.UserDomainName.ToString(),
+                        UserName = Environment.UserName.ToString()
+                    }
+                };
 
-            BusinessLayer.SubmitTicket(ticket);
-            MessageBox.Show("Ticket successfully created");
+                BusinessLayer.SubmitTicket(ticket);
+                MessageBox.Show("Ticket successfully created");
+            }
+            else
+            {
+                MessageBox.Show("Must fill out al fields");
+            }
+            
         }
     }
 }

@@ -51,7 +51,20 @@
             // 
             // cbCategory
             // 
+            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Items.AddRange(new object[] {
+            "Blue Screen of Death",
+            "Password Predicaments",
+            "Slow Internet",
+            "Lost Wireless Signal",
+            "Failure to Recognize a USB Device",
+            "Printer Problems",
+            "Slow Operations",
+            "Unsaved Files",
+            "Deleted Files",
+            "Login Difficulties",
+            "Other"});
             this.cbCategory.Location = new System.Drawing.Point(169, 53);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(251, 29);

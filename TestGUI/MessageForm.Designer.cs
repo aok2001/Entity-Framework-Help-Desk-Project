@@ -32,6 +32,7 @@
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblReceiver = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(26, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(347, 218);
+            this.groupBox1.Size = new System.Drawing.Size(347, 265);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reciever";
@@ -78,12 +79,26 @@
             this.lblReceiver.TabIndex = 3;
             this.lblReceiver.Text = "User";
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.MistyRose;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClose.Location = new System.Drawing.Point(48, 226);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(302, 57);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // MessageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(399, 294);
+            this.ClientSize = new System.Drawing.Size(399, 311);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Name = "MessageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -100,5 +115,6 @@
         private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblReceiver;
+        private System.Windows.Forms.Button btnClose;
     }
 }

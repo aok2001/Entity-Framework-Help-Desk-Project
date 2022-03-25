@@ -25,10 +25,10 @@ namespace HelpDeskClassLibrary
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            //options.UseSqlServer(@"server=192.168.1.81;database=HelpDeskDB;user id=sa;password=P@ssword!");
+            options.UseSqlServer(@"server=192.168.1.81;database=HelpDeskDB;user id=sa;password=P@ssword!");
 
             // Use one my end localhost
-            options.UseSqlServer(@"server=localhost;database=HelpDeskDB;trusted_connection=true;");
+            //options.UseSqlServer(@"server=localhost;database=HelpDeskDB;trusted_connection=true;");
         }
     }
 }

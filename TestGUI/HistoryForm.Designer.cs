@@ -38,6 +38,7 @@
             // 
             this.lstTickets.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lstTickets.FormattingEnabled = true;
+            this.lstTickets.HorizontalScrollbar = true;
             this.lstTickets.ItemHeight = 21;
             this.lstTickets.Location = new System.Drawing.Point(26, 37);
             this.lstTickets.Name = "lstTickets";
