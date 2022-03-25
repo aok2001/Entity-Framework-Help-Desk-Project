@@ -73,5 +73,10 @@ namespace TestGUI
             messageForm.ShowDialog();
             FillMessages(selected_user);
         }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

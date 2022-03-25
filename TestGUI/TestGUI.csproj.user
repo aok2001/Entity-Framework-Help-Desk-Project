@@ -25,5 +25,8 @@
     <Compile Update="StandardUserForms\SubmitTicketForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TicketInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

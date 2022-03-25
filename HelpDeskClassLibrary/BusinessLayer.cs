@@ -108,6 +108,18 @@ namespace HelpDeskClassLibrary
             return user_with_profile.Profile;
         }
 
+        public static Ticket GetTicketWithSystemInfo(Ticket ticket)
+        {
+            Ticket ret = new Ticket();
+
+            using (HelpDeskDBContext db = new HelpDeskDBContext())
+            {
+                ret = db.Tickets.Include(x => x.SystemInfo).Where(x => x.Id == ticket.Id).FirstOrDefault();
+            }
+
+            return ret;
+        }
+
         #endregion
 
         #region "Lists"

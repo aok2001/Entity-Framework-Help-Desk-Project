@@ -69,5 +69,10 @@ namespace TestGUI
             HistoryForm historyForm = new HistoryForm();
             historyForm.ShowDialog();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

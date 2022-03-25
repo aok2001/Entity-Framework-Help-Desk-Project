@@ -34,12 +34,13 @@
             this.btnInbox = new System.Windows.Forms.Button();
             this.gbAdmins = new System.Windows.Forms.GroupBox();
             this.btnTicketHistory = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.gbAdmins.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTicket
             // 
-            this.btnTicket.Location = new System.Drawing.Point(148, 227);
+            this.btnTicket.Location = new System.Drawing.Point(148, 92);
             this.btnTicket.Name = "btnTicket";
             this.btnTicket.Size = new System.Drawing.Size(118, 23);
             this.btnTicket.TabIndex = 1;
@@ -97,11 +98,22 @@
             this.btnTicketHistory.UseVisualStyleBackColor = true;
             this.btnTicketHistory.Click += new System.EventHandler(this.btnTicketHistory_Click);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(148, 227);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(109, 23);
+            this.btnLogout.TabIndex = 12;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // StandardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(276, 265);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnTicketHistory);
             this.Controls.Add(this.gbAdmins);
             this.Controls.Add(this.btnInbox);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.Button btnInbox;
         private System.Windows.Forms.GroupBox gbAdmins;
         private System.Windows.Forms.Button btnTicketHistory;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

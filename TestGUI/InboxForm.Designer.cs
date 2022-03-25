@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnReply = new System.Windows.Forms.Button();
+            this.btnDone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstUsers
@@ -82,11 +83,22 @@
             this.btnReply.UseVisualStyleBackColor = true;
             this.btnReply.Click += new System.EventHandler(this.btnReply_Click);
             // 
+            // btnDone
+            // 
+            this.btnDone.Location = new System.Drawing.Point(9, 217);
+            this.btnDone.Name = "btnDone";
+            this.btnDone.Size = new System.Drawing.Size(114, 23);
+            this.btnDone.TabIndex = 5;
+            this.btnDone.Text = "Done";
+            this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
+            // 
             // InboxForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 251);
+            this.ClientSize = new System.Drawing.Size(373, 254);
+            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnReply);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -107,5 +119,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnReply;
+        private System.Windows.Forms.Button btnDone;
     }
 }

@@ -130,5 +130,28 @@ namespace TestGUI
             profileForm.ShowDialog();
             this.Show();
         }
+
+        private void btnMoreInfo_Click(object sender, EventArgs e)
+        {
+            TicketInfoForm ticketInfoForm = new TicketInfoForm((Ticket)lstPending.SelectedItem);
+            ticketInfoForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TicketInfoForm ticketInfoForm = new TicketInfoForm((Ticket)lstActive.SelectedItem);
+            ticketInfoForm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TicketInfoForm ticketInfoForm = new TicketInfoForm((Ticket)lstClosed.SelectedItem);
+            ticketInfoForm.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace HelpDeskClassLibrary
         public string Status { get; set; }
         public string AssignedAdminUsername { get; set; }
         public string TicketSenderUsername { get; set; }
+        public SystemInfo SystemInfo { get; set; }
     }
 }

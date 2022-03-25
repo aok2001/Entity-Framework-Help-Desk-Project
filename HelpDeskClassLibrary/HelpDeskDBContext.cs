@@ -20,6 +20,7 @@ namespace HelpDeskClassLibrary
         public DbSet<Admin> Admins { get; set; }
         public DbSet<UserProfile> Profiles { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<SystemInfo> TicketSysInfo { get; set; }
         public DbSet<Message> Messages { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
