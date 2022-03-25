@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj": {}
+    "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj": {
+    "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj",
         "projectName": "HelpDeskClassLibrary",
-        "projectPath": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj",
-        "packagesPath": "C:\\Users\\andrew\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\obj\\",
+        "projectPath": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\cm_an\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\cm_an\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -78,22 +85,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj": {
+    "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj",
+        "projectUniqueName": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj",
         "projectName": "TestGUI",
-        "projectPath": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj",
-        "packagesPath": "C:\\Users\\andrew\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\obj\\",
+        "projectPath": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\TestGUI.csproj",
+        "packagesPath": "C:\\Users\\cm_an\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\TestGUI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\cm_an\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -106,8 +120,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\andrew\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj"
+              "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\cm_an\\Source\\Repos\\Entity-Framework-Help-Desk-Project\\HelpDeskClassLibrary\\HelpDeskClassLibrary.csproj"
               }
             }
           }
@@ -139,7 +153,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
