@@ -32,13 +32,13 @@ namespace TestGUI
             txtCategory.Text = ticket_with_info.Category;
             txtDesc.Text = ticket_with_info.Description;
 
-            label1.Text = systemInfo.OS;
-            label2.Text = systemInfo.MachineName;
-            label3.Text = systemInfo.CoreCount;
-            label4.Text = systemInfo.LogicalDrives;
-            label5.Text = systemInfo.DotNetVersion;
-            label6.Text = systemInfo.DomainName;
-            label7.Text = systemInfo.UserName;
+            lblOS.Text = systemInfo.OS;
+            lblMachineName.Text = systemInfo.MachineName;
+            lblCoreCount.Text = systemInfo.CoreCount;
+            lblLogicalDrives.Text = systemInfo.LogicalDrives;
+            lblDotNetVersion.Text = systemInfo.DotNetVersion;
+            lblDomainName.Text = systemInfo.DomainName;
+            lblUserName.Text = systemInfo.UserName;
 
         }
 

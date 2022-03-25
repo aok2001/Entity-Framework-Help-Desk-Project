@@ -16,7 +16,9 @@ namespace TestGUI
         public Form1()
         {
             InitializeComponent();
-            this.Height = 210;
+
+            // Updated form height
+            this.Height = 334;
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -81,35 +83,26 @@ namespace TestGUI
                         StandardForm standardForm = new StandardForm();
                         this.Hide();
 
-
                         if (standardForm.ShowDialog() == DialogResult.OK)
-                        {
                             standardForm.ShowDialog();
-                        }
                         else
-                        {
                             this.Show();
-                        }
                         break;
+                    
                     case 1:
                         AdminForm adminForm = new AdminForm();
                         this.Hide();
 
                         if (adminForm.ShowDialog() == DialogResult.OK)
-                        {
-                            adminForm.ShowDialog();
-                        }
-                        else
-                        {
-                            this.Show();
-                        }
+                            adminForm.ShowDialog();                       
+                        else                     
+                            this.Show();                     
                         break;
                 }                             
             }
             else
-            {
                 MessageBox.Show("Login failed.");
-            }
+            
         }
 
         private bool register_load = false;
@@ -118,12 +111,14 @@ namespace TestGUI
         {
             if (register_load == false)
             {
-                this.Height = 480;
+                // Updated form height
+                this.Height = 845;
                 register_load = true;
             }
             else if (register_load == true)
             {
-                this.Height = 210;
+                // Updated form height
+                this.Height = 480;
                 register_load = false;
             }
             

@@ -31,138 +31,166 @@
             this.btnDone = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
             this.txtDesc = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblOS = new System.Windows.Forms.Label();
+            this.lblMachineName = new System.Windows.Forms.Label();
+            this.lblCoreCount = new System.Windows.Forms.Label();
+            this.lblLogicalDrives = new System.Windows.Forms.Label();
+            this.lblDotNetVersion = new System.Windows.Forms.Label();
+            this.lblDomainName = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.txtCategory = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDone
             // 
-            this.btnDone.Location = new System.Drawing.Point(12, 180);
+            this.btnDone.BackColor = System.Drawing.Color.MistyRose;
+            this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDone.Location = new System.Drawing.Point(28, 30);
             this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(171, 23);
+            this.btnDone.Size = new System.Drawing.Size(168, 48);
             this.btnDone.TabIndex = 7;
-            this.btnDone.Text = "Done";
-            this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Text = "Exit";
+            this.btnDone.UseVisualStyleBackColor = false;
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUser.Location = new System.Drawing.Point(12, 9);
+            this.lblUser.Location = new System.Drawing.Point(448, 34);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(52, 21);
+            this.lblUser.Size = new System.Drawing.Size(42, 21);
             this.lblUser.TabIndex = 4;
-            this.lblUser.Text = "label1";
+            this.lblUser.Text = "User";
             // 
             // txtDesc
             // 
             this.txtDesc.Enabled = false;
-            this.txtDesc.Location = new System.Drawing.Point(12, 66);
+            this.txtDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDesc.Location = new System.Drawing.Point(26, 164);
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(171, 108);
+            this.txtDesc.Size = new System.Drawing.Size(951, 195);
             this.txtDesc.TabIndex = 8;
             this.txtDesc.Text = "";
             // 
-            // label1
+            // lblOS
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(189, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
+            this.lblOS.AutoSize = true;
+            this.lblOS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblOS.Location = new System.Drawing.Point(26, 118);
+            this.lblOS.Name = "lblOS";
+            this.lblOS.Size = new System.Drawing.Size(31, 21);
+            this.lblOS.TabIndex = 9;
+            this.lblOS.Text = "OS";
             // 
-            // label2
+            // lblMachineName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "label2";
+            this.lblMachineName.AutoSize = true;
+            this.lblMachineName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMachineName.Location = new System.Drawing.Point(110, 118);
+            this.lblMachineName.Name = "lblMachineName";
+            this.lblMachineName.Size = new System.Drawing.Size(111, 21);
+            this.lblMachineName.TabIndex = 10;
+            this.lblMachineName.Text = "MachineName";
             // 
-            // label3
+            // lblCoreCount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(189, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "label3";
+            this.lblCoreCount.AutoSize = true;
+            this.lblCoreCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCoreCount.Location = new System.Drawing.Point(274, 118);
+            this.lblCoreCount.Name = "lblCoreCount";
+            this.lblCoreCount.Size = new System.Drawing.Size(85, 21);
+            this.lblCoreCount.TabIndex = 11;
+            this.lblCoreCount.Text = "CoreCount";
             // 
-            // label4
+            // lblLogicalDrives
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(189, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "label4";
+            this.lblLogicalDrives.AutoSize = true;
+            this.lblLogicalDrives.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLogicalDrives.Location = new System.Drawing.Point(412, 118);
+            this.lblLogicalDrives.Name = "lblLogicalDrives";
+            this.lblLogicalDrives.Size = new System.Drawing.Size(103, 21);
+            this.lblLogicalDrives.TabIndex = 12;
+            this.lblLogicalDrives.Text = "LogicalDrives";
             // 
-            // label5
+            // lblDotNetVersion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(189, 129);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "label5";
+            this.lblDotNetVersion.AutoSize = true;
+            this.lblDotNetVersion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDotNetVersion.Location = new System.Drawing.Point(568, 118);
+            this.lblDotNetVersion.Name = "lblDotNetVersion";
+            this.lblDotNetVersion.Size = new System.Drawing.Size(112, 21);
+            this.lblDotNetVersion.TabIndex = 13;
+            this.lblDotNetVersion.Text = "DotNetVersion";
             // 
-            // label6
+            // lblDomainName
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(189, 144);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 15);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "label6";
+            this.lblDomainName.AutoSize = true;
+            this.lblDomainName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDomainName.Location = new System.Drawing.Point(870, 118);
+            this.lblDomainName.Name = "lblDomainName";
+            this.lblDomainName.Size = new System.Drawing.Size(107, 21);
+            this.lblDomainName.TabIndex = 14;
+            this.lblDomainName.Text = "DomainName";
             // 
-            // label7
+            // lblUserName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(189, 159);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 15);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "label7";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUserName.Location = new System.Drawing.Point(733, 118);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(84, 21);
+            this.lblUserName.TabIndex = 15;
+            this.lblUserName.Text = "UserName";
             // 
             // txtCategory
             // 
             this.txtCategory.Enabled = false;
-            this.txtCategory.Location = new System.Drawing.Point(12, 36);
+            this.txtCategory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCategory.Location = new System.Drawing.Point(26, 392);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(171, 23);
+            this.txtCategory.Size = new System.Drawing.Size(951, 29);
             this.txtCategory.TabIndex = 16;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.Controls.Add(this.txtDesc);
+            this.groupBox1.Controls.Add(this.lblDomainName);
+            this.groupBox1.Controls.Add(this.lblUser);
+            this.groupBox1.Controls.Add(this.txtCategory);
+            this.groupBox1.Controls.Add(this.lblUserName);
+            this.groupBox1.Controls.Add(this.lblOS);
+            this.groupBox1.Controls.Add(this.lblMachineName);
+            this.groupBox1.Controls.Add(this.lblDotNetVersion);
+            this.groupBox1.Controls.Add(this.lblCoreCount);
+            this.groupBox1.Controls.Add(this.lblLogicalDrives);
+            this.groupBox1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(28, 109);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1036, 458);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ticket Info";
             // 
             // TicketInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 216);
-            this.Controls.Add(this.txtCategory);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDesc);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(1105, 604);
             this.Controls.Add(this.btnDone);
-            this.Controls.Add(this.lblUser);
+            this.Controls.Add(this.groupBox1);
             this.Name = "TicketInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicketInfoForm";
             this.Load += new System.EventHandler(this.TicketInfoForm_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -171,13 +199,14 @@
         private System.Windows.Forms.Button btnDone;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.RichTextBox txtDesc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblOS;
+        private System.Windows.Forms.Label lblMachineName;
+        private System.Windows.Forms.Label lblCoreCount;
+        private System.Windows.Forms.Label lblLogicalDrives;
+        private System.Windows.Forms.Label lblDotNetVersion;
+        private System.Windows.Forms.Label lblDomainName;
+        private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.TextBox txtCategory;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+// Added using for use with updating the database
+using Microsoft.EntityFrameworkCore.Design;
+
 namespace HelpDeskClassLibrary.Migrations
 {
     [DbContext(typeof(HelpDeskDBContext))]

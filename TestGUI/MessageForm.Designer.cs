@@ -29,56 +29,63 @@
         private void InitializeComponent()
         {
             this.btnSend = new System.Windows.Forms.Button();
-            this.lblReceiver = new System.Windows.Forms.Label();
             this.txtMessage = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(12, 56);
+            this.btnSend.BackColor = System.Drawing.Color.Honeydew;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSend.Location = new System.Drawing.Point(22, 82);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(215, 23);
+            this.btnSend.Size = new System.Drawing.Size(302, 57);
             this.btnSend.TabIndex = 0;
             this.btnSend.Text = "Send Message";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // lblReceiver
-            // 
-            this.lblReceiver.AutoSize = true;
-            this.lblReceiver.Location = new System.Drawing.Point(12, 9);
-            this.lblReceiver.Name = "lblReceiver";
-            this.lblReceiver.Size = new System.Drawing.Size(51, 15);
-            this.lblReceiver.TabIndex = 1;
-            this.lblReceiver.Text = "Receiver";
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(12, 27);
+            this.txtMessage.Location = new System.Drawing.Point(22, 43);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(215, 23);
+            this.txtMessage.Size = new System.Drawing.Size(302, 29);
             this.txtMessage.TabIndex = 2;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.Controls.Add(this.btnSend);
+            this.groupBox1.Controls.Add(this.txtMessage);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(26, 34);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(347, 166);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Reciever";
             // 
             // MessageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 101);
-            this.Controls.Add(this.txtMessage);
-            this.Controls.Add(this.lblReceiver);
-            this.Controls.Add(this.btnSend);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(399, 212);
+            this.Controls.Add(this.groupBox1);
             this.Name = "MessageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageForm";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.Label lblReceiver;
         private System.Windows.Forms.TextBox txtMessage;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

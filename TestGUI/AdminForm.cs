@@ -153,5 +153,10 @@ namespace TestGUI
         {
             this.Close();
         }
+
+        private void lstUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Accidental click no code needed here
+        }
     }
 }

@@ -30,6 +30,7 @@ namespace TestGUI
             lblName.Text = $"{userProfile.FirstName} {userProfile.LastName}";
             lblOccupation.Text = $"{userProfile.Occupation}";
             lblBirthDate.Text = $"Birthday: {userProfile.Birthday.ToString("yyyy-MM-dd")}";
+
         }
 
         private void btnDone_Click(object sender, EventArgs e)
